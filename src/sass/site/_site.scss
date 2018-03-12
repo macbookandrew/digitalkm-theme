@@ -1,5 +1,5 @@
-// @import "../layout/content-sidebar";
-// @import "../layout/sidebar-content";
+@import "../layout/sidebar-content";
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -9,3 +9,10 @@
 ## Comments
 --------------------------------------------------------------*/
 @import "primary/comments";
+.site-header,
+.site-content,
+.site-footer {
+	padding-right: 2em;
+	padding-left: 2em;
+}
+
