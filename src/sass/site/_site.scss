@@ -9,6 +9,7 @@
 ## Comments
 --------------------------------------------------------------*/
 @import "primary/comments";
+
 .site-header,
 .site-content,
 .site-footer {
@@ -16,3 +17,9 @@
 	padding-left: 2em;
 }
 
+.site-header,
+.site-footer {
+	background: $color__text-main;
+
+	a { color: $color__background-body; }
+}
