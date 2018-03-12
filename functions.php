@@ -131,6 +131,17 @@ function digitalkm_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	$webfonts = "
+	WebFont.load({
+		google: {
+		  families: ['Lato:400,400i,700,700i','Crete+Round:400,400i']
+		},
+	});";
+
+	wp_enqueue_script( 'webfont-loader', 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js' );
+	wp_add_inline_script( 'webfont-loader', $webfonts );
+
 }
 add_action( 'wp_enqueue_scripts', 'digitalkm_scripts' );
 
