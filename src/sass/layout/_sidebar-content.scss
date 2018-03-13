@@ -1,16 +1,22 @@
+.site-content {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1600px;
+	margin: 0 auto;
+
+	.widget-area { order: 1; }
+	.content-area { order: 2; }
+}
+
 @media screen and (min-width: 37.5em) {
-	.site-content {
-		display: flex;
-	}
+	.site-content { flex-wrap: nowrap; }
 
 	.content-area {
-		order: 2;
 		width: calc(#{($size__site-main - $size__site-sidebar)} - 2em);
 		margin-left: 2em;
 	}
 
 	.site-content .widget-area {
-		order: 1;
 		overflow: hidden;
 		width: $size__site-sidebar;
 	}
