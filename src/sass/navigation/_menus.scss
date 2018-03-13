@@ -83,8 +83,14 @@
 	.menu-toggle {
 		display: none;
 	}
-	.main-navigation ul {
-		display: block;
+	.main-navigation {
+		.nav-menu {
+			display: flex;
+			align-items: flex-end;
+			height: 100%;
+		}
+
+		ul ul { display: block; }
 	}
 }
 
