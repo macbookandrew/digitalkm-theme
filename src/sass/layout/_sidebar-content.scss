@@ -1,20 +1,21 @@
-.content-area {
-	float: right;
-	margin: 0 0 0 (-$size__site-sidebar);
-	width: $size__site-main;
-}
+@media screen and (min-width: 37.5em) {
+	.site-content {
+		display: flex;
+	}
 
-.site-main {
-	margin: 0 0 0 $size__site-sidebar;
-}
+	.content-area {
+		order: 2;
+		width: calc(#{($size__site-main - $size__site-sidebar)} - 2em);
+		margin-left: 2em;
+	}
 
-.site-content .widget-area {
-	float: left;
-	overflow: hidden;
-	width: $size__site-sidebar;
-}
+	.site-content .widget-area {
+		order: 1;
+		overflow: hidden;
+		width: $size__site-sidebar;
+	}
 
-.site-footer {
-	clear: both;
-	width: $size__site-main;
+	.site-footer {
+		width: $size__site-main;
+	}
 }
