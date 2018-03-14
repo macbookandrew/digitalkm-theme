@@ -1,0 +1,25 @@
+.site-content {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.entry-content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.image-carousel { margin-bottom: 5em; }
+
+@media screen and (min-width: 37.5em) {
+	.entry-content {
+		#images {
+			width: 100%;
+			margin-bottom: 2em;
+		}
+
+		.sidebar { width: 25%; }
+		.content { width: 50%; }
+
+		.sidebar, .content { padding: 1em; }
+	}
+}
