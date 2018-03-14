@@ -1,20 +1,21 @@
-$color__background-body: #fdf6e4;
+$site-gray: #3b3f41;
+$site-bg: #fdf6e4;
+
+$color__background-body: $site-bg;
 $color__background-screen: #f1f1f1;
 $color__background-hr: #ccc;
-$color__background-button: #e6e6e6;
+$color__background-button: $site-gray;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 
 $color__text-screen: #21759b;
 $color__text-input: #666;
 $color__text-input-focus: #111;
+$color__text-button: $color__background-body;
 $color__link: #21759b;
 $color__link-visited: $color__link;
 $color__link-hover: darken($color__link, 30%);
-$color__text-main: #3b3f41;
+$color__text-main: $site-gray;
 
-$color__border-button: #ccc #ccc #bbb;
-$color__border-button-hover: #ccc #bbb #aaa;
-$color__border-button-focus: #aaa #bbb #bbb;
 $color__border-input: #ccc;
 $color__border-abbr: #666;
