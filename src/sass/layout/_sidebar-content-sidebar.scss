@@ -6,14 +6,13 @@
 .entry-content {
 	display: flex;
 	flex-wrap: wrap;
+
+	#images, .sidebar, .content { width: 100%; }
 }
 
 @media screen and (min-width: 37.5em) {
 	.entry-content {
-		#images {
-			width: 100%;
-			margin-bottom: 2em;
-		}
+		#images { margin-bottom: 2em; }
 
 		.sidebar { width: 25%; }
 		.content { width: 50%; }
