@@ -29,7 +29,11 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php digitalkm_post_thumbnail(); ?>
+	<?php
+	if ( ! is_singular() ) {
+		digitalkm_post_thumbnail();
+	}
+	?>
 
 	<div class="entry-content">
 		<?php
