@@ -16,5 +16,6 @@ input[type="submit"] {
 	&:active,
 	&:focus {
 		background-color: lighten($color__background-button, 15%);
+		color: $color__text-button;
 	}
 }
