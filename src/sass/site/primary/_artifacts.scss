@@ -8,3 +8,15 @@
 	width: 100%;
 	min-height: 75vh;
 }
+
+.archive .artifact {
+	.entry-header {
+		width: 100%;
+		padding: 2em;
+		background-color: $color__text-main;
+		text-align: center;
+		font-size: 150%;
+
+		a { color: $color__background-body; }
+	}
+}
