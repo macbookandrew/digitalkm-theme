@@ -30,7 +30,7 @@
 	</header><!-- .entry-header -->
 
 	<?php
-	if ( empty( get_field( 'images' ) ) ) {
+	if ( is_singular() && empty( get_field( 'images' ) ) ) {
 		digitalkm_post_thumbnail();
 	}
 	?>
