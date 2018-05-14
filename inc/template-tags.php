@@ -134,10 +134,13 @@ if ( ! function_exists( 'digitalkm_post_thumbnail' ) ) :
 
 		<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
 			<?php
-			the_post_thumbnail( 'post-thumbnail', array(
-				'alt' => the_title_attribute( array(
-					'echo' => false,
-				) ),
+			the_post_thumbnail( 'timeline-image-lg', array(
+				'alt' => the_title_attribute(
+					array(
+						'echo'  => false,
+					)
+				),
+				'class'	=> 'align-center',
 			) );
 			?>
 		</a>
