@@ -20,3 +20,15 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+.archive {
+	.entry-header {
+		width: 100%;
+		padding: 2em;
+		background-color: $color__text-main;
+		text-align: center;
+		font-size: 150%;
+
+		a { color: $color__background-body; }
+	}
+}
