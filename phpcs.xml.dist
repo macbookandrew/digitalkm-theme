@@ -33,6 +33,8 @@
 
 	<!-- Check all files in this directory and the directories below it. -->
 	<file>.</file>
+	<exclude-pattern>**/*.min*</exclude-pattern>
+	<exclude-pattern>node_modules/*</exclude-pattern>
 
 
 	<!--
@@ -54,7 +56,7 @@
 		 Multiple valid text domains can be provided as a comma-delimited list. -->
 	<rule ref="WordPress.WP.I18n">
 		<properties>
-			<property name="text_domain" type="array" value="_s"/>
+			<property name="text_domain" type="array" value="digitalkm"/>
 		</properties>
 	</rule>
 
@@ -64,6 +66,10 @@
 		<properties>
 			<property name="is_theme" value="true"/>
 		</properties>
+	</rule>
+
+	<rule ref="WordPress.NamingConventions">
+		<exclude name="WordPress.NamingConventions.PrefixAllGlobals"/>
 	</rule>
 
 	<!-- Set the minimum supported WP version. This is used by several sniffs.

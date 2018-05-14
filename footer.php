@@ -17,7 +17,7 @@
 		<div class="site-info">
 			<p>A joint project between the <a href="http://www.kingsmountainmuseum.org/">Kings Mountain Historical Museum</a> and <a href="http://mauneylibrary.org/">Mauney Memorial Library</a></p>
 			<p>
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'digitalkm' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'digitalkm' ), 'WordPress' ); ?></a>
+				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'digitalkm' ) ); ?>">Proudly powered by WordPress</a>
 				<span class="sep"> | </span>
 				Custom development by <a href="https://andrewrminion.com/">AndrewRMinion Design</a>
 			</p>

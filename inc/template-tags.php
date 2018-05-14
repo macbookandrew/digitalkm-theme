@@ -17,7 +17,8 @@ if ( ! function_exists( 'digitalkm_posted_on' ) ) :
 			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
 		}
 
-		$time_string = sprintf( $time_string,
+		$time_string = sprintf(
+			$time_string,
 			esc_attr( get_the_date( 'c' ) ),
 			esc_html( get_the_date() ),
 			esc_attr( get_the_modified_date( 'c' ) ),
@@ -134,14 +135,16 @@ if ( ! function_exists( 'digitalkm_post_thumbnail' ) ) :
 
 		<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
 			<?php
-			the_post_thumbnail( 'timeline-image-lg', array(
-				'alt' => the_title_attribute(
-					array(
-						'echo'  => false,
-					)
-				),
-				'class'	=> 'align-center',
-			) );
+			the_post_thumbnail(
+				'timeline-image-lg', array(
+					'alt'   => the_title_attribute(
+						array(
+							'echo'  => false,
+						)
+					),
+					'class' => 'align-center',
+				)
+			);
 			?>
 		</a>
 
