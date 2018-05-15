@@ -32,3 +32,61 @@
 		a { color: $color__background-body; }
 	}
 }
+
+.home {
+	.site-content {
+		background: url('../img/Post-office-blueprint.jpg') center / cover;
+
+		* { color: $color__background-body; }
+	}
+}
+
+.home-resource-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 80%;
+	margin: 0 auto;
+
+	article {
+		position: relative;
+		width: 50%;
+		text-align: center;
+
+		@media screen and (min-width: 37.5em) {
+			width: 33%;
+
+			&:nth-child(3n-2) { right: -2vw; }
+			&:nth-child(3n) { left: -2vw; }
+			&:nth-child(3n) + article { top: -2vh; }
+		}
+
+		@media screen and (max-width: 37.5em) {
+			&:nth-child(2n-1) { right: -2vw; }
+			&:nth-child(2n) { left: -2vw; }
+			&:nth-child(2n) + article { top: -2vh; }
+		}
+
+		img { box-shadow: 0 0 10px rgba($color__background-button, 0.5); }
+
+		&:hover .content { opacity: 1; }
+
+		&:nth-child(1n) { transform: rotate(-5deg); }
+		&:nth-child(2n) { transform: rotate( 5deg); }
+		&:nth-child(3n) { transform: rotate(-2deg); }
+		&:nth-child(4n) { transform: rotate( 2deg); }
+		&:nth-child(5n) { transform: rotate(-3deg); }
+		&:nth-child(6n) { transform: rotate( 3deg); }
+	}
+
+	.content {
+		position: absolute;
+		top: -1em;
+		right: -1em;
+		left: -1em;
+		padding: 2em;
+		background: rgba($color__homepage-resource-background, 0.9);
+		opacity: 0;
+		transition: all 0.3s ease;
+	}
+}
