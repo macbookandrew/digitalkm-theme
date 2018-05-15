@@ -3,27 +3,28 @@
 	margin: 0 auto;
 }
 
-.entry-content {
-	display: flex;
-	flex-wrap: wrap;
-
-	#images, .sidebar, .content { width: 100%; }
-
-	#images {
-		iframe {
-			display: block;
-			margin: 0 auto;
-		}
-	}
-}
-
-@media screen and (min-width: 37.5em) {
+.artifact,
+.mayor {
 	.entry-content {
-		#images { margin-bottom: 2em; }
+		display: flex;
+		flex-wrap: wrap;
 
-		.sidebar { width: 25%; }
-		.content { width: 50%; }
+		#images, .sidebar, .content { width: 100%; }
 
-		.sidebar, .content { padding: 1em; }
+		#images {
+			iframe {
+				display: block;
+				margin: 0 auto;
+			}
+		}
+
+		@media screen and (min-width: 37.5em) {
+			#images { margin-bottom: 2em; }
+
+			.sidebar { width: 25%; }
+			.content { width: 50%; }
+
+			.sidebar, .content { padding: 1em; }
+		}
 	}
 }
