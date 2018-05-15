@@ -12,7 +12,8 @@
 		#images, .sidebar, .content { width: 100%; }
 
 		#images {
-			iframe {
+			iframe,
+			.wp-video {
 				display: block;
 				margin: 0 auto;
 			}
