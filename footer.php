@@ -21,6 +21,7 @@
 				<span class="sep"> | </span>
 				Custom development by <a href="https://andrewrminion.com/">AndrewRMinion Design</a>
 			</p>
+			<p>LSTA grant programs are made possible by grant funds from the Institute of Museum and Library Services under the provisions of the federal Library Services and Technology Act as administered by the State Library of North Carolina, a division of the Department of Cultural Resources.</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
