@@ -34,11 +34,9 @@
 }
 
 .home {
-	.site-content {
-		background: url('../img/Post-office-blueprint.jpg') center / cover;
+	background: url('../img/Post-office-blueprint.jpg') center / cover;
 
-		* { color: $color__background-body; }
-	}
+	.site-content * { color: $color__background-body; }
 }
 
 .home-resource-container {
