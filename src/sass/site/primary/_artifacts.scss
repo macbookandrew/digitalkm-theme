@@ -1,7 +1,16 @@
 .image-carousel {
 	margin-bottom: 5em;
 
-	figure { padding: 1em;}
+	figure {
+		padding: 1em;
+		max-width: 50%;
+		text-align: center;
+
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
 }
 
 #timeline-embed,
